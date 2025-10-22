@@ -314,3 +314,80 @@ footer.footer img {
     height: auto;
     object-fit: contain;
 }
+
+/* ===== Experience (radicalement restructuré, sobre Bulma-friendly) ===== */
+#cv .xp-group { margin-top: .25rem; }
+
+/* Petits intertitres */
+#cv .xp-section {
+  margin: .75rem 0 .25rem;
+  font-size: .85rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #334155; /* slate-700 */
+}
+
+/* Ligne compacte, grille 3 colonnes: pastille | contenu | date */
+#cv .xp-entry {
+  display: grid;
+  grid-template-columns: .675rem 1fr auto;
+  align-items: start;
+  gap: .5rem 1rem;
+  padding: .44rem .25rem;
+  border-top: 1px solid rgba(2,6,23,.06);
+}
+#cv .xp-entry:first-of-type { border-top: 0; }
+
+/* Pastille ultra discrète (différente pro/asso), sans badge */
+#cv .xp-dot {
+  width: .38rem; height: .38rem; margin-top: .35rem;
+  border-radius: 999px;
+  background: rgba(2,6,23,.22);
+}
+#cv .xp-entry.pro .xp-dot   { background: rgba(13,148,136,.28); } /* teal très léger */
+#cv .xp-entry.assoc .xp-dot { background: rgba(37,99,235,.24); }  /* bleu très léger */
+
+/* Contenu: rôle + org sur une ligne; note seulement pour stages */
+#cv .xp-body { min-width: 0; }
+#cv .xp-head { display: inline; }
+#cv .xp-role { color: #0f172a; }     /* texte principal, pas de gras */
+#cv .xp-at   { color: #1f2937; }     /* org, un ton en dessous sans gris fade */
+#cv .xp-note {
+  margin-top: .12rem;
+  color: #111827;
+  line-height: 1.28;
+}
+
+/* Date à droite, claire mais secondaire */
+#cv .xp-date {
+  color: #64748b;                    /* slate-500 */
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  padding-left: .5rem;
+}
+
+/* Hover minimal (desktop), juste pour guider l'œil */
+@media (hover:hover) {
+  #cv .xp-entry:hover { background: rgba(2,6,23,.018); }
+}
+
+/* Mobile: date passe en dessous */
+@media (max-width: 768px) {
+  #cv .xp-entry { grid-template-columns: .675rem 1fr; }
+  #cv .xp-date { grid-column: 2; margin-top: .08rem; padding-left: 0; }
+}
+
+/* VS Code-like styling for inline libs (override Bulma's red code color) */
+#cv code.libs-inline {
+  background: transparent;
+  padding: 0;
+  color: inherit; /* <-- neutralise le rouge de Bulma pour que les virgules restent normales */
+  font-family: "Cascadia Code", "Consolas", ui-monospace, SFMono-Regular, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95em;
+}
+
+/* Identifiants/modules en teal VS Code Dark+ */
+#cv code.libs-inline .lib {
+  color: #4EC9B0; /* VS Code Dark+ teal */
+  font-weight: 500; /* optionnel, donne un rendu proche de VS Code */
+}
