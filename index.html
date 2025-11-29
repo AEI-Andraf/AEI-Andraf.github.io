@@ -8,38 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-    <style>
-        /* Softer, semi-transparent navbar with subtle blur */
-        .navbar.transparent {
-            background: rgba(255, 255, 255, 0.65);
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            border-bottom: 1px solid rgba(0,0,0,0.06);
-        }
-        .navbar.transparent .navbar-item,
-        .navbar.transparent .navbar-link {
-            color: #0f172a; /* slate-900 */
-        }
-        .project-card { cursor: pointer; transition: transform .12s ease; }
-        .project-card:hover { transform: translateY(-2px); }
-        /* Better PDF modal viewing */
-        .pdf-frame { width: 100%; height: 80vh; border: none; }
-        /* Contact card */
-        .contact-card { max-width: 720px; margin: 0 auto; }
-        .contact-item { display:flex; align-items:center; gap:.75rem; }
-        .email-pill { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-    </style>
+
 </head>
 <body>
-    <nav class="navbar transparent" role="navigation" aria-label="main navigation">
-        <div class="navbar-menu is-active">
-            <div class="navbar-start">
-                <a class="navbar-item" href="#home">Home</a>
-                <a class="navbar-item" href="#cv">Resume</a>
-                <a class="navbar-item" href="#projects">Projects</a>
-                <a class="navbar-item" href="#contact">Contact</a>
-            </div>
+    <nav class="navbar is-fixed-top transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-menu">
+        <div class="navbar-start">
+        <a class="navbar-item" href="#home">Home</a>
+        <a class="navbar-item" href="#resume">Resume</a>
+        <a class="navbar-item" href="#projects">Projects</a>
+        <a class="navbar-item" href="#contact">Contact</a>
         </div>
+    </div>
     </nav>
 
     <section id="home" class="section">
@@ -65,80 +45,136 @@
         </div>
     </section>
 
-    <section id="cv" class="section">
+    <section id="resume" class="section">
         <div class="container">
             <h2 class="title">Resume</h2>
             <div class="columns">
                 <div class="column is-two-thirds">
 
-                    <h3>Education</h3>
-                    <p>I am currently enrolled in a dual degree program between Sciences Po Saint-Germain-en-Laye and CY Tech, combining political science and computer engineering. You can find more details in the <a href="https://www.sciencespo-saintgermainenlaye.fr/wp-content/uploads/2025/01/Plaquette-Double-Diplome.pdf" target="_blank">official brochure</a>.</p>
+                    <h3 class="title">Education</h3>
+
+                    <div id="degree">
+
+                        <!-- Titre du diplôme -->
+                        <p class="degree-title">Double Degree — Data & Digital Humanities (2022 - 2028)</p>
+
+                        <div class="columns is-vcentered">
+
+                            <!-- CY TECH -->
+                            <div class="column degree-col">
+                                <h4 class="school-title">
+                                    <img src="logo CYTECH.png" class="school-logo" alt="">
+                                    CY Tech
+                                </h4>
+                                <ul class="school-list">
+                                    <li>Data visualization</li>
+                                    <li>Deep learning & Machine learning</li>
+                                    <li>Artificial Intelligence</li>
+                                    <li>Big data management</li>
+                                    <li>Cloud computing</li>
+                                    <li>Text Mining</li>
+                                </ul>
+                            </div>
+
+                            <!-- Sciences Po -->
+                            <div class="column degree-col">
+                                <h4 class="school-title">
+                                    <img src="logo SPSG.png" class="school-logo" alt="">
+                                    Sciences Po Saint-Germain-en-Laye
+                                </h4>
+                                <ul class="school-list">
+                                    <li>Political Science</li>
+                                    <li>Geopolitics</li>
+                                    <li>Computational Social Sciences</li>
+                                    <li>Public Data Policy</li>
+                                    <li>AI Controversies</li>
+                                    <li>Russian Language</li>
+                                </ul>
+                            </div>
+
+                            <!-- La colonne droite EXISTE DÉJÀ PLUS BAS, on n’y touche pas -->
+                        </div>
+
+
+                            <!-- Timeline éducation en dessous -->
+                            <div class="xp-group" id="education">
+
+                                <div class="xp-entry edu">
+                                    <span class="xp-dot" aria-hidden="true"></span>
+                                    <div class="xp-body">
+                                        <div class="xp-head">
+                                            <span class="xp-role">Exchange Semester</span>
+                                            <span class="xp-at">— Ilia State University — Tbilisi, Georgia</span>
+                                        </div>
+                                    </div>
+                                    <time class="xp-date">Mar 2025 – Jul 2025</time>
+                                </div>
+                            </div>
+                        </div>
+
 
                     <h3 class="title">Experience</h3>
 
                     <div class="xp-group" id="experience">
-                    <h4 class="xp-section">Professional</h4>
+                        <h4 class="xp-section">Professional</h4>
 
-                    <div class="xp-entry pro">
-                        <span class="xp-dot" aria-hidden="true"></span>
-                        <div class="xp-body">
-                        <div class="xp-head">
-                            <span class="xp-role">Research Assistant (Data Science)</span>
-                            <span class="xp-at">— CY Maison de la Recherche SHS</span>
+                        <div class="xp-entry pro">
+                            <span class="xp-dot" aria-hidden="true"></span>
+                            <div class="xp-body">
+                                <div class="xp-head">
+                                    <span class="xp-role">Research Assistant (Data Science)</span>
+                                    <span class="xp-at">— CY Maison de la Recherche SHS</span>
+                                </div>
+                            </div>
+                            <time class="xp-date">Jan 2025 – Feb 2025</time>
                         </div>
+
+                        <div class="xp-entry pro">
+                            <span class="xp-dot" aria-hidden="true"></span>
+                            <div class="xp-body">
+                                <div class="xp-head">
+                                    <span class="xp-role">Intern — État-Major de Zone de Défense de Paris</span>
+                                    <span class="xp-at">— Ministère des Armées</span>
+                                </div>
+                            </div>
+                            <time class="xp-date">May 2023 – Jul 2023</time>
                         </div>
-                        <time class="xp-date">Jan 2025 – Feb 2025</time>
+
+                        <h4 class="xp-section">Associations</h4>
+
+                        <div class="xp-entry assoc">
+                            <span class="xp-dot" aria-hidden="true"></span>
+                            <div class="xp-body">
+                                <div class="xp-head">
+                                    <span class="xp-role">Vice President</span>
+                                    <span class="xp-at">— Bureau d’Analyse des Enjeux de la Défense (BAED)</span>
+                                </div>
+                            </div>
+                            <time class="xp-date">Aug 2025 – Present</time>
+                        </div>
+
+                        <div class="xp-entry assoc">
+                            <span class="xp-dot" aria-hidden="true"></span>
+                            <div class="xp-body">
+                                <div class="xp-head">
+                                    <span class="xp-role">President</span>
+                                    <span class="xp-at">— St GerMUN Society</span>
+                                </div>
+                            </div>
+                            <time class="xp-date">May 2023 – Feb 2025</time>
+                        </div>
                     </div>
-
-                    <div class="xp-entry pro">
-                        <span class="xp-dot" aria-hidden="true"></span>
-                        <div class="xp-body">
-                        <div class="xp-head">
-                            <span class="xp-role">Intern — État-Major de Zone de Défense de Paris</span>
-                            <span class="xp-at">— Ministère des Armées</span>
-                        </div>
-                        </div>
-                        <time class="xp-date">May 2023 – Jul 2023</time>
-                    </div>
-
-                    <h4 class="xp-section">Associations</h4>
-
-                    <div class="xp-entry assoc">
-                        <span class="xp-dot" aria-hidden="true"></span>
-                        <div class="xp-body">
-                        <div class="xp-head">
-                            <span class="xp-role">Vice President</span>
-                            <span class="xp-at">— Bureau d’Analyse des Enjeux de la Défense (BAED)</span>
-                        </div>
-                        </div>
-                        <time class="xp-date">Aug 2025 – Present</time>
-                    </div>
-
-                    <div class="xp-entry assoc">
-                        <span class="xp-dot" aria-hidden="true"></span>
-                        <div class="xp-body">
-                        <div class="xp-head">
-                            <span class="xp-role">President</span>
-                            <span class="xp-at">— St GerMUN Society</span>
-                        </div>
-                        </div>
-                        <time class="xp-date">May 2023 – Feb 2025</time>
-                    </div>
-                    </div>
-
-
-
-
 
                     <h3 class="title">Skills</h3>
                     <p>
-                    <b>Languages &amp; tools:</b> Python, R, LaTeX, Git, Office Suite.<br>
-                    <b>Python libraries:</b>
-                    <code class="libs-inline">
-                        pandas, numpy, scikit-learn, PyTorch, matplotlib, seaborn, plotly, ultralytics, networkx, requests, BeautifulSoup, Selenium, PyYAML.
-                    </code>
+                        <b>Coding Languages &amp; tools:</b> Python, R, LaTeX, Git, Office Suite.<br>
+                        <b>Python libraries:</b>
+                        <code class="libs-inline">
+                            pandas, numpy, scikit-learn, PyTorch, matplotlib, seaborn, plotly,
+                            ultralytics, networkx, requests, BeautifulSoup, Selenium, PyYAML.
+                        </code> <br>
+                        <b>Languages:</b> English (fluent), French (native), Russian (intermediate).
                     </p>
-
 
                 </div>
                 <div class="column">
@@ -161,11 +197,30 @@
         </div>
     </section>
 
+
     <section id="projects" class="section"> 
         <div class="container">
             <h2 class="title">Projects</h2>
             <div class="columns is-multiline">
-                
+                                
+                <div class="column is-one-third">
+                <div class="box project-card" onclick="showProject('projet8')">
+                    <figure class="image is-square">
+                    <img src="Russian Propaganda.jpg" alt="Russian propaganda analysis on Ukraina.ru">
+                    </figure>
+                    <p class="has-text-centered">Russian Propaganda Analysis (Ukraina.ru)</p>
+                </div>
+                </div>
+
+                <div class="column is-one-third">
+                <div class="box project-card" onclick="showProject('projet7')">
+                    <figure class="image is-square">
+                    <img src="hong kong.jpg" alt="Hong Kong 2019 protests and digital tools">
+                    </figure>
+                    <p class="has-text-centered">Hong Kong 2019 Protests &amp; Digital Space</p>
+                </div>
+                </div>
+
                 <div class="column is-one-third">
                     <div class="box project-card" onclick="showProject('projet6')">
                         <figure class="image is-square">
@@ -223,10 +278,82 @@
             </div>
         </div>
 
+        <div id="projet8" class="modal">
+            <div class="modal-background" onclick="closeProject('projet8')"></div>
+            <div class="modal-content box">
+                <h3 class="title">Project 8: Russian Propaganda Narratives on Ukraina.ru (November 2025)</h3>
+                <p>
+                Computational analysis of over 11,000 <em>Ukraina.ru</em> articles (2014–2025), combining large-scale scraping, 
+                TF–IDF modeling, TruncatedSVD, KMeans clustering and transformer-based classification to trace how Russian 
+                state media construct, adapt, and synchronize propaganda narratives with wartime events.
+                </p>
+
+                <div class="buttons mb-3">
+                <a class="button is-link" href="Report Ukraina.ru Romain Jaffuel.pdf" target="_blank">
+                    <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
+                    <span>Open full screen</span>
+                </a>
+                <a class="button" href="Report Ukraina.ru Romain Jaffuel.pdf" download>
+                    <span class="icon"><i class="fa-solid fa-download"></i></span>
+                    <span>Download PDF</span>
+                </a>
+                </div>
+
+                <iframe class="pdf-frame" src="Report Ukraina.ru Romain Jaffuel.pdf"></iframe>
+
+                <a class="button is-light mt-3"
+                href="https://github.com/Romain-Jaffuel/Russian-Propaganda-Analysis-Ukraina.ru"
+                target="_blank">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>View full project on GitHub</span>
+                </a>
+            </div>
+
+            <button class="modal-close is-large" aria-label="close"
+                    onclick="closeProject('projet8')"></button>
+        </div>
+
+
+
+        <div id="projet7" class="modal">
+            <div class="modal-background" onclick="closeProject('projet7')"></div>
+            <div class="modal-content box">
+                <h3 class="title">Project 7: Hong Kong 2019 Protests &amp; Digital Space (November 2025)</h3>
+                <p>
+                Research paper examining how Hong Kong protesters and Chinese authorities used digital platforms 
+                during the 2019 movement. Using digital space concepts, we reviewed online coordination (Telegram, LIHKG), 
+                state surveillance, and the post-2020 shift toward self-censorship under the National Security Law.
+                </p>
+
+                <div class="buttons mb-3">
+                <a class="button is-link"
+                    href="HongKong 2019 &amp; Digital Space - Romain JAFFUEL, Yassine BENAMAR.pdf"
+                    target="_blank">
+                    <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
+                    <span>Open full screen</span>
+                </a>
+                <a class="button"
+                    href="HongKong 2019 &amp; Digital Space - Romain JAFFUEL, Yassine BENAMAR.pdf"
+                    download>
+                    <span class="icon"><i class="fa-solid fa-download"></i></span>
+                    <span>Download PDF</span>
+                </a>
+                </div>
+
+                <iframe class="pdf-frame"
+                        src="HongKong 2019 &amp; Digital Space - Romain JAFFUEL, Yassine BENAMAR.pdf">
+                </iframe>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close"
+                onclick="closeProject('projet7')"></button>
+        </div>
+
+
         <div id="projet6" class="modal">
             <div class="modal-background" onclick="closeProject('projet6')"></div>
             <div class="modal-content box">
-                <h3 class="title">Project 6: Maritime Drone Patrol Simulation (August 2025)</h3>
+                <h3 class="title">Project 6: Maritime Drone Patrol Simulation (August 2025) <br>[Still in development]</h3>
                 <p>
                     A simulation of autonomous maritime drone patrols over dense vessel traffic in the Gulf of Finland. 
                     It generates synthetic traffic, runs coordinated patrol patterns, scores detections, and produces human-readable 
@@ -352,46 +479,44 @@
         <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet1')"></button>
     </div>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="title">Contact</h2>
-            <div class="card contact-card">
-                <div class="card-content">
-                    <div class="content">
-                        <p class="contact-item">
-                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                            <a id="emailLink" class="email-pill" href="mailto:romain.jaffuel1@gmail.com">romain.jaffuel1@gmail.com</a>
-                        </p>
-                        <div class="buttons mt-3">
-                            <a href="https://github.com/Romain-Jaffuel" class="button is-dark" target="_blank">
-                                <span class="icon"><i class="fab fa-github"></i></span>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="https://linkedin.com/in/romain-jaffuel" class="button is-link" target="_blank">
-                                <span class="icon"><i class="fab fa-linkedin"></i></span>
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <footer id="contact" class="footer">
+        <div class="content has-text-centered">
 
-    <footer class="footer">
-        <div class="content has-text-centered credits">
-            <p>
-            This page was created by Romain Jaffuel using <a href="https://bulma.io/" target="_blank">Bulma</a>,
-            <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, and custom HTML/CSS.
-            </p>
-            <p>
-            Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
-            </p>
-            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
-            <img src="https://licensebuttons.net/l/by/4.0/88x31.png" alt="Creative Commons License">
-            </a>
+            <p class="footer-title">Contact</p>
+
+            <div class="footer-icons">
+                <a href="mailto:romain.jaffuel1@gmail.com" class="footer-btn" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="https://github.com/Romain-Jaffuel" target="_blank" class="footer-btn" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/romain-jaffuel" target="_blank" class="footer-btn" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+
+            <div class="credits">
+                <p>This page was created using 
+                    <a href="https://bulma.io/" target="_blank">Bulma</a>,
+                    <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+                    and custom HTML/CSS.
+                </p>
+
+                <p>Content licensed under 
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+                </p>
+
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+                    <img src="https://licensebuttons.net/l/by/4.0/88x31.png" alt="Creative Commons License">
+                </a>
+            </div>
+
         </div>
     </footer>
+
 
     <script>
         function showProject(id) {
@@ -400,7 +525,16 @@
         function closeProject(id) {
             document.getElementById(id).classList.remove('is-active');
         }
-
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("iframe.pdf-frame").forEach(frame => {
+                const src = frame.getAttribute("src");
+                if (!src.includes("#")) {
+                    frame.setAttribute("src", src + "#zoom=50");
+                } else if (!src.includes("zoom=")) {
+                    frame.setAttribute("src", src + "&zoom=50");
+                }
+            });
+        });
     </script>
 </body>
 </html>
