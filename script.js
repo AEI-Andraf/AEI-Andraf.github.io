@@ -3,25 +3,31 @@ document.querySelectorAll('.logo-link').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        // Récupérer l'ID du projet à afficher (l'ID est extrait de l'attribut href)
-        const projectId = this.getAttribute('href').substring(1); // Récupère l'id (sans #)
-        const projectContent = document.getElementById(projectId); // Récupère le contenu du projet depuis la section cachée
+        const projectId = this.getAttribute('href').substring(1);
+        const projectContent = document.getElementById(projectId);
 
-        // Mettre à jour les détails du projet dans la modale
         const projectDetails = document.getElementById('project-details');
-        projectDetails.innerHTML = projectContent.innerHTML; // Copie le contenu du projet dans la modale
+        projectDetails.innerHTML = projectContent.innerHTML;
 
-        // Afficher la modale
+        // === ZOOM GLOBAL 50% POUR TOUS LES PDF ===
+        projectDetails.querySelectorAll("iframe.pdf-frame").forEach(frame => {
+            const src = frame.getAttribute("src");
+            if (!src.includes("#")) {
+                frame.setAttribute("src", src + "#zoom=50");
+            } else if (!src.includes("zoom=")) {
+                frame.setAttribute("src", src + "&zoom=50");
+            }
+        });
+
         document.getElementById('project-modal').style.display = 'block';
 
-        // Scroll jusqu'à la modale
         document.getElementById('project-modal').scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
 
-// Fermer la modale lorsque l'utilisateur clique sur le bouton "fermer"
+// Fermer la modale lorsqu'on clique sur le bouton "fermer"
 document.getElementById('close-modal').addEventListener('click', function () {
     document.getElementById('project-modal').style.display = 'none';
 });
