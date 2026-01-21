@@ -202,7 +202,16 @@
         <div class="container">
             <h2 class="title">Projects</h2>
             <div class="columns is-multiline">
-                                
+                            
+                <div class="column is-one-third">
+                <div class="box project-card" onclick="showProject('projet9')">
+                    <figure class="image is-square">
+                    <img src="logo_elections.png" alt="Election clustering report">
+                    </figure>
+                    <p class="has-text-centered">Election Clustering (Legislative Systems)</p>
+                </div>
+                </div>
+
                 <div class="column is-one-third">
                 <div class="box project-card" onclick="showProject('projet8')">
                     <figure class="image is-square">
@@ -276,6 +285,35 @@
                 </div>
                 
             </div>
+        </div>
+
+        <div id="projet9" class="modal">
+        <div class="modal-background" onclick="closeProject('projet9')"></div>
+
+        <div class="modal-content box">
+            <h3 class="title">Project 9: Election Clustering – Worldwide Legislative Electoral Systems (December 2025)</h3>
+
+            <p>
+            Analysis of lower-chamber legislative election results using constituency-level data (CLEA).
+            Pipeline includes preprocessing of missing codes, standard scaling, PCA, t-SNE/UMAP embeddings, 
+            and clustering with KMeans, DBSCAN, and HDBSCAN. The report includes a focused case study on Russian elections (2003 vs 2016).
+            </p>
+
+            <div class="buttons mb-3">
+            <a class="button is-link" href="Report Election Clustering – BENAMAR Yassine – JAFFUEL Romain.pdf" target="_blank">
+                <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
+                <span>Open full screen</span>
+            </a>
+            <a class="button" href="Report Election Clustering – BENAMAR Yassine – JAFFUEL Romain.pdf" download>
+                <span class="icon"><i class="fa-solid fa-download"></i></span>
+                <span>Download PDF</span>
+            </a>
+            </div>
+
+            <iframe class="pdf-frame" src="Report Election Clustering – BENAMAR Yassine – JAFFUEL Romain.pdf"></iframe>
+        </div>
+
+        <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet9')"></button>
         </div>
 
         <div id="projet8" class="modal">
