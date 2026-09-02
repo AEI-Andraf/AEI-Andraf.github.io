@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romain Jaffuel</title>
+
+    <title>Romain Jaffuel — Data Science &amp; Political Science</title>
+    <meta name="author" content="Romain Jaffuel">
+    <meta name="description" content="Portfolio of Romain Jaffuel, dual-degree student at Sciences Po Saint-Germain-en-Laye and CY Tech, working at the intersection of data science, geopolitics and global security.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Projects at the intersection of data science, geopolitics and global security.">
+    <meta property="og:url" content="https://romain-jaffuel.github.io/">
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23005B9F'/%3E%3Ctext x='16' y='22' font-family='Roboto,Arial,sans-serif' font-size='14' font-weight='700' fill='%23ffffff' text-anchor='middle'%3ERJ%3C/text%3E%3C/svg%3E">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
     <nav class="navbar is-fixed-top transparent" role="navigation" aria-label="main navigation">
@@ -37,7 +46,7 @@
                 <div class="column is-4-desktop is-5-tablet image-custom-align">
                     <figure class="image image-custom-align">
                         <a href="https://www.sciencespo-saintgermainenlaye.fr/formations/double-diplome-ingenieur-data-et-humanites-digitales/" target="_blank">
-                            <img src="Plaquette-Double-Diplome-2025-26.jpg" alt="Dual Degree Diploma">
+                            <img src="assets/img/dual-degree-brochure.jpg" alt="Dual Degree Diploma">
                         </a>
                     </figure>
                 </div>
@@ -56,15 +65,15 @@
                     <div id="degree">
 
                         <!-- Titre du diplôme -->
-                        <p class="degree-title">Double Degree — Data & Digital Humanities (2022 - 2028)</p>
+                        <p class="degree-title"><a href="https://www.sciencespo-saintgermainenlaye.fr/formations/double-diplome-ingenieur-data-et-humanites-digitales/" target="_blank" rel="noopener">Double Degree — Data &amp; Digital Humanities (2022 - 2028)</a></p>
 
                         <div class="columns is-vcentered">
 
                             <!-- CY TECH -->
                             <div class="column degree-col">
                                 <h4 class="school-title">
-                                    <img src="logo CYTech.png" class="school-logo" alt="">
-                                    CY Tech
+                                    <img src="assets/img/logos/cy-tech.png" class="school-logo" alt="">
+                                    <a href="https://cytech.cyu.fr/" target="_blank" rel="noopener">CY Tech</a>
                                 </h4>
                                 <ul class="school-list">
                                     <li>Data visualization</li>
@@ -79,8 +88,8 @@
                             <!-- Sciences Po -->
                             <div class="column degree-col">
                                 <h4 class="school-title">
-                                    <img src="logo SPSG.png" class="school-logo" alt="">
-                                    Sciences Po Saint-Germain-en-Laye
+                                    <img src="assets/img/logos/sciences-po-sg.png" class="school-logo" alt="">
+                                    <a href="https://www.sciencespo-saintgermainenlaye.fr/" target="_blank" rel="noopener">Sciences Po Saint-Germain-en-Laye</a>
                                 </h4>
                                 <ul class="school-list">
                                     <li>Political Science</li>
@@ -104,7 +113,7 @@
                                     <div class="xp-body">
                                         <div class="xp-head">
                                             <span class="xp-role">Exchange Semester</span>
-                                            <span class="xp-at">— Ilia State University — Tbilisi, Georgia</span>
+                                            <span class="xp-at">— <a href="https://iliauni.edu.ge/en" target="_blank" rel="noopener">Ilia State University</a> — Tbilisi, Georgia</span>
                                         </div>
                                     </div>
                                     <time class="xp-date">Mar 2025 – Jul 2025</time>
@@ -122,8 +131,19 @@
                             <span class="xp-dot" aria-hidden="true"></span>
                             <div class="xp-body">
                                 <div class="xp-head">
+                                    <span class="xp-role">Research Intern</span>
+                                    <span class="xp-at">— <a href="https://www.peren.gouv.fr/en" target="_blank" rel="noopener">Pôle d’Expertise de la Régulation Numérique (PEReN)</a></span>
+                                </div>
+                            </div>
+                            <time class="xp-date">Apr 2026 – Sep 2026</time>
+                        </div>
+
+                        <div class="xp-entry pro">
+                            <span class="xp-dot" aria-hidden="true"></span>
+                            <div class="xp-body">
+                                <div class="xp-head">
                                     <span class="xp-role">Research Assistant (Data Science)</span>
-                                    <span class="xp-at">— CY Maison de la Recherche SHS</span>
+                                    <span class="xp-at">— <a href="https://www.cyu.fr/recherche-et-innovation/trouver-une-structure-de-recherche/maison-de-la-recherche-shs" target="_blank" rel="noopener">CY Maison de la Recherche SHS</a></span>
                                 </div>
                             </div>
                             <time class="xp-date">Jan 2025 – Feb 2025</time>
@@ -133,7 +153,7 @@
                             <span class="xp-dot" aria-hidden="true"></span>
                             <div class="xp-body">
                                 <div class="xp-head">
-                                    <span class="xp-role">Intern — État-Major de Zone de Défense de Paris</span>
+                                    <span class="xp-role">Intern — <a href="https://www.defense.gouv.fr/ema/zone-defense-securite-paris" target="_blank" rel="noopener">État-Major de Zone de Défense de Paris</a></span>
                                     <span class="xp-at">— Ministère des Armées</span>
                                 </div>
                             </div>
@@ -147,7 +167,7 @@
                             <div class="xp-body">
                                 <div class="xp-head">
                                     <span class="xp-role">Vice President</span>
-                                    <span class="xp-at">— Bureau d’Analyse des Enjeux de la Défense (BAED)</span>
+                                    <span class="xp-at">— <a href="https://www.sciencespo-saintgermainenlaye.fr/vie-etudiante/la-richesse-associative/bureau-danalyse-des-enjeux-de-la-defense/" target="_blank" rel="noopener">Bureau d’Analyse des Enjeux de la Défense (BAED)</a></span>
                                 </div>
                             </div>
                             <time class="xp-date">Aug 2025 – Present</time>
@@ -158,7 +178,7 @@
                             <div class="xp-body">
                                 <div class="xp-head">
                                     <span class="xp-role">President</span>
-                                    <span class="xp-at">— St GerMUN Society</span>
+                                    <span class="xp-at">— <a href="https://www.sciencespo-saintgermainenlaye.fr/vie-etudiante/la-richesse-associative/st-germun-society/" target="_blank" rel="noopener">St GerMUN Society</a></span>
                                 </div>
                             </div>
                             <time class="xp-date">May 2023 – Feb 2025</time>
@@ -179,18 +199,25 @@
                 </div>
                 <div class="column">
                     <div class="columns is-multiline is-mobile">
-                        <div class="column is-one-third"><img src="Logo Python.png" alt="Python Logo"></div>
-                        <div class="column is-one-third"><img src="Logo ScikitLearn.png" alt="Scikit-learn Logo"></div>
-                        <div class="column is-one-third"><img src="Logo Pytorch.png" alt="PyTorch Logo"></div>
-                        <div class="column is-one-third"><img src="Logo R.png" alt="R Logo"></div>
-                        <div class="column is-one-third"><img src="Logo Overleaf.png" alt="Overleaf Logo"></div>
-                        <div class="column is-one-third"><img src="Logo Kepler.png" alt="Kepler Logo"></div>
-                        <div class="column is-one-third"><img src="Logo ML.png" alt="ML Logo"></div>
-                        <div class="column is-one-third"><img src="Logo RNN.png" alt="RNN Logo"></div>
-                        <div class="column is-one-third"><img src="Logo BAED.png" alt="BAED Logo"></div>
-                        <div class="column is-one-third"><img src="Logo EMZD-P.png" alt="EMZD Logo"></div>
-                        <div class="column is-one-third"><img src="Logo OERI.png" alt="OERI Logo"></div>
-                        <div class="column is-one-third"><img src="logo MUN.JPG" alt="MUN Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/python.png" alt="Python Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/scikit-learn.png" alt="Scikit-learn Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/pytorch.png" alt="PyTorch Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/r.png" alt="R Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/overleaf.png" alt="Overleaf Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/kepler.png" alt="Kepler Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/machine-learning.png" alt="ML Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/rnn.png" alt="RNN Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/baed.png" alt="BAED Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/emzd-p.png" alt="EMZD Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/oeri.png" alt="OERI Logo"></div>
+                        <div class="column is-one-third"><img src="assets/img/logos/mun.jpg" alt="MUN Logo"></div>
+                    </div>
+
+                    <div class="cv-block">
+                        <a href="assets/docs/cv-romain-jaffuel.pdf" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                            <span>Full resume (PDF)</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -202,11 +229,20 @@
         <div class="container">
             <h2 class="title">Projects</h2>
             <div class="columns is-multiline">
-                            
+
+                <div class="column is-one-third">
+                <div class="box project-card" onclick="showProject('projet10')">
+                    <figure class="image is-square is-wide-shot">
+                    <img src="assets/img/projects/russian-media-monitor/carte-influence.png" loading="lazy" alt="Russian Media Monitor — geopolitical influence map">
+                    </figure>
+                    <p class="has-text-centered">Russian Media Monitor</p>
+                </div>
+                </div>
+
                 <div class="column is-one-third">
                 <div class="box project-card" onclick="showProject('projet9')">
                     <figure class="image is-square">
-                    <img src="logo_elections.png" alt="Election clustering report">
+                    <img src="assets/img/projects/election-clustering.png" loading="lazy" alt="Election clustering report">
                     </figure>
                     <p class="has-text-centered">Election Clustering (Legislative Systems)</p>
                 </div>
@@ -215,7 +251,7 @@
                 <div class="column is-one-third">
                 <div class="box project-card" onclick="showProject('projet8')">
                     <figure class="image is-square">
-                    <img src="Russian Propaganda.jpg" alt="Russian propaganda analysis on Ukraina.ru">
+                    <img src="assets/img/projects/russian-propaganda.jpg" loading="lazy" alt="Russian propaganda analysis on Ukraina.ru">
                     </figure>
                     <p class="has-text-centered">Russian Propaganda Analysis (Ukraina.ru)</p>
                 </div>
@@ -224,7 +260,7 @@
                 <div class="column is-one-third">
                 <div class="box project-card" onclick="showProject('projet7')">
                     <figure class="image is-square">
-                    <img src="hong kong.jpg" alt="Hong Kong 2019 protests and digital tools">
+                    <img src="assets/img/projects/hong-kong.jpg" loading="lazy" alt="Hong Kong 2019 protests and digital tools">
                     </figure>
                     <p class="has-text-centered">Hong Kong 2019 Protests &amp; Digital Space</p>
                 </div>
@@ -233,7 +269,7 @@
                 <div class="column is-one-third">
                     <div class="box project-card" onclick="showProject('projet6')">
                         <figure class="image is-square">
-                            <img src="logo_isr2strike.png" alt="Maritime Drone Patrol Simulation">
+                            <img src="assets/img/projects/isr2strike.png" loading="lazy" alt="Maritime Drone Patrol Simulation">
                         </figure>
                         <p class="has-text-centered">Maritime Drone Patrol Simulation</p>
                     </div>
@@ -242,7 +278,7 @@
                 <div class="column is-one-third">
                     <div class="box project-card" onclick="showProject('projet5')">
                         <figure class="image is-square">
-                            <img src="logo_aircraft.png" alt="Military Aircraft Detection">
+                            <img src="assets/img/projects/aircraft-detection.png" loading="lazy" alt="Military Aircraft Detection">
                         </figure>
                         <p class="has-text-centered">Military Aircraft Detection</p>
                     </div>
@@ -251,7 +287,7 @@
                 <div class="column is-one-third">
                     <div class="box project-card" onclick="showProject('projet4')">
                         <figure class="image is-square">
-                            <img src="logo_snake.png" alt="Snake AI">
+                            <img src="assets/img/projects/snake-ai.png" loading="lazy" alt="Snake AI">
                         </figure>
                         <p class="has-text-centered">Snake AI with Reinforcement Learning</p>
                     </div>
@@ -260,7 +296,7 @@
                 <div class="column is-one-third">
                     <div class="box project-card" onclick="showProject('projet3')">
                         <figure class="image is-square">
-                            <img src="Logo Stats.png" alt="Project 3">
+                            <img src="assets/img/projects/mooc-stats.png" loading="lazy" alt="Project 3">
                         </figure>
                         <p class="has-text-centered">Engagement in Online Learning Platforms</p>
                     </div>
@@ -269,7 +305,7 @@
                 <div class="column is-one-third">
                     <div class="box project-card" onclick="showProject('projet2')">
                         <figure class="image is-square">
-                            <img src="Logo UA.png" alt="Project 2">
+                            <img src="assets/img/projects/drone-classification-ua.png" loading="lazy" alt="Project 2">
                         </figure>
                         <p class="has-text-centered">Drone Classification in Ukraine</p>
                     </div>
@@ -278,7 +314,7 @@
                 <div class="column is-one-third">
                     <div class="box project-card" onclick="showProject('projet1')">
                         <figure class="image is-square">
-                            <img src="Logo Syrie.png" alt="Project 1">
+                            <img src="assets/img/projects/syria.png" loading="lazy" alt="Project 1">
                         </figure>
                         <p class="has-text-centered">Syria Civil War Analysis</p>
                     </div>
@@ -286,8 +322,56 @@
                 
             </div>
         </div>
+    </section>
 
-        <div id="projet9" class="modal">
+    <!-- ===================== Project modals ===================== -->
+
+    <div id="projet10" class="modal">
+        <div class="modal-background" onclick="closeProject('projet10')"></div>
+        <div class="modal-content box">
+            <h3 class="title">Project 10: Russian Media Monitor (since August 2026)</h3>
+            <p>
+                An automated monitoring pipeline for Russian-language media coverage of Russia. Every day it collects
+                press, Telegram channels, television programmes, YouTube channels and VKontakte communities — 55+ sources
+                across five media types, each tagged by editorial family (state, para-state, independent, exile) and legal status.
+                Television and video are transcribed with Whisper, contents are clustered with BERTopic, and a Mistral model
+                scores geopolitical sentiment, lexical framing and rhetorical devices. Everything lands in DuckDB and is served
+                through a Streamlit dashboard of nine analytical tabs.
+            </p>
+
+            <div class="buttons mb-3">
+                <a class="button is-link" href="https://russian-media-monitor.streamlit.app/" target="_blank" rel="noopener">
+                    <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+                    <span>Open the live dashboard</span>
+                </a>
+                <a class="button" href="https://github.com/Romain-Jaffuel/Russian-Media-Monitor" target="_blank" rel="noopener">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>View full project on GitHub</span>
+                </a>
+            </div>
+
+            <figure class="project-shot">
+                <img src="assets/img/projects/russian-media-monitor/vue-ensemble.png" loading="lazy"
+                     alt="Dashboard overview: volume of collected content per day, broken down by source">
+                <figcaption>Overview tab — corpus volume day by day, decomposed by source and content type.</figcaption>
+            </figure>
+
+            <figure class="project-shot">
+                <img src="assets/img/projects/russian-media-monitor/themes-par-jour.png" loading="lazy"
+                     alt="Day-by-day breakdown of the themes detected in the corpus">
+                <figcaption>Themes tab — each day is clustered on its own 24-hour window, showing the share of every theme over time.</figcaption>
+            </figure>
+
+            <figure class="project-shot">
+                <img src="assets/img/projects/russian-media-monitor/carte-influence.png" loading="lazy"
+                     alt="Geopolitical influence map of sixteen actors, sized by mentions and coloured by sentiment">
+                <figcaption>Influence map — sixteen geopolitical actors, sized by number of mentions and coloured by the average orientation of their coverage.</figcaption>
+            </figure>
+        </div>
+        <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet10')"></button>
+    </div>
+
+    <div id="projet9" class="modal">
         <div class="modal-background" onclick="closeProject('projet9')"></div>
 
         <div class="modal-content box">
@@ -300,17 +384,17 @@
             </p>
 
             <div class="buttons mb-3">
-            <a class="button is-link" href="Report Election Clustering – BENAMAR Yassine – JAFFUEL Romain.pdf" target="_blank">
+            <a class="button is-link" href="assets/docs/election-clustering-report.pdf" target="_blank">
                 <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
                 <span>Open full screen</span>
             </a>
-            <a class="button" href="Report Election Clustering – BENAMAR Yassine – JAFFUEL Romain.pdf" download>
+            <a class="button" href="assets/docs/election-clustering-report.pdf" download>
                 <span class="icon"><i class="fa-solid fa-download"></i></span>
                 <span>Download PDF</span>
             </a>
             </div>
 
-            <iframe class="pdf-frame" src="Report Election Clustering – BENAMAR Yassine – JAFFUEL Romain.pdf"></iframe>
+            <iframe class="pdf-frame" data-src="assets/docs/election-clustering-report.pdf"></iframe>
         </div>
 
         <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet9')"></button>
@@ -327,17 +411,17 @@
                 </p>
 
                 <div class="buttons mb-3">
-                <a class="button is-link" href="Report Ukraina.ru Romain Jaffuel.pdf" target="_blank">
+                <a class="button is-link" href="assets/docs/ukraina-ru-propaganda-report.pdf" target="_blank">
                     <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
                     <span>Open full screen</span>
                 </a>
-                <a class="button" href="Report Ukraina.ru Romain Jaffuel.pdf" download>
+                <a class="button" href="assets/docs/ukraina-ru-propaganda-report.pdf" download>
                     <span class="icon"><i class="fa-solid fa-download"></i></span>
                     <span>Download PDF</span>
                 </a>
                 </div>
 
-                <iframe class="pdf-frame" src="Report Ukraina.ru Romain Jaffuel.pdf"></iframe>
+                <iframe class="pdf-frame" data-src="assets/docs/ukraina-ru-propaganda-report.pdf"></iframe>
 
                 <a class="button is-light mt-3"
                 href="https://github.com/Romain-Jaffuel/Russian-Propaganda-Analysis-Ukraina.ru"
@@ -365,13 +449,13 @@
 
                 <div class="buttons mb-3">
                 <a class="button is-link"
-                    href="HongKong 2019 &amp; Digital Space - Romain JAFFUEL, Yassine BENAMAR.pdf"
+                    href="assets/docs/hong-kong-2019-digital-space.pdf"
                     target="_blank">
                     <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
                     <span>Open full screen</span>
                 </a>
                 <a class="button"
-                    href="HongKong 2019 &amp; Digital Space - Romain JAFFUEL, Yassine BENAMAR.pdf"
+                    href="assets/docs/hong-kong-2019-digital-space.pdf"
                     download>
                     <span class="icon"><i class="fa-solid fa-download"></i></span>
                     <span>Download PDF</span>
@@ -379,7 +463,7 @@
                 </div>
 
                 <iframe class="pdf-frame"
-                        src="HongKong 2019 &amp; Digital Space - Romain JAFFUEL, Yassine BENAMAR.pdf">
+                        data-src="assets/docs/hong-kong-2019-digital-space.pdf">
                 </iframe>
         </div>
 
@@ -398,18 +482,17 @@
                     strike recommendation reports with geographic visualizations. The short video below shows a map-based overview 
                     of detections and patrols working together to identify targets among civilian traffic.
                 </p>
-                <video controls width="100%">
-                    <source src="Fully Random Detection Vizualisation on kepler.gl.mp4" type="video/mp4">
+                <video controls preload="none" width="100%">
+                    <source src="assets/video/isr2strike-kepler.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <a class="button is-link is-light mt-3" href="https://github.com/Romain-Jaffuel/ISR2Strike-Replay" target="_blank">
                     <span class="icon"><i class="fab fa-github"></i></span><span>View full project on GitHub</span>
                 </a>
             </div>
-            <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet6')"></button>
-        </div>
-    </section>
-    
+        <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet6')"></button>
+    </div>
+
     <div id="projet5" class="modal">
         <div class="modal-background" onclick="closeProject('projet5')"></div>
         <div class="modal-content box">
@@ -420,8 +503,8 @@
                 over 85 aircraft classes with clear gains in recall and precision. 
                 The video below shows a short preview of the detector at work on a random video.
             </p>
-            <video controls width="100%">
-                <source src="video preview YOLOv8s.mp4" type="video/mp4">
+            <video controls preload="none" width="100%">
+                <source src="assets/video/yolov8-aircraft-preview.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <a class="button is-link is-light mt-3" href="https://github.com/Romain-Jaffuel/Military-Aircraft-Detection" target="_blank">
@@ -440,8 +523,8 @@
                 The model is trained over multiple games and progressively improves its performance. 
                 The video below shows an example of the agent playing after training.
             </p>
-            <video controls width="100%">
-                <source src="Example_Training.mp4" type="video/mp4">
+            <video controls preload="none" width="100%">
+                <source src="assets/video/snake-ai-training.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <a class="button is-link is-light mt-3" href="https://github.com/Romain-Jaffuel/Snake-AI" target="_blank">
@@ -457,16 +540,16 @@
             <h3 class="title">Project 3: Online Learning Statistics (June 2024)</h3>
             <p>Study of learner engagement in MOOCs, focusing on sociodemographics (e.g., HDI) and their relationship with platform activity (videos watched, quizzes completed). Methods include t-tests and logistic regressions. Result: strong positive correlation between HDI and video engagement; gender not significant.</p>
             <div class="buttons mb-3">
-                <a class="button is-link" href="Rendu_IMRAD_Stats.pdf" target="_blank">
+                <a class="button is-link" href="assets/docs/mooc-engagement-stats.pdf" target="_blank">
                     <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
                     <span>Open full screen</span>
                 </a>
-                <a class="button" href="Rendu_IMRAD_Stats.pdf" download>
+                <a class="button" href="assets/docs/mooc-engagement-stats.pdf" download>
                     <span class="icon"><i class="fa-solid fa-download"></i></span>
                     <span>Download PDF</span>
                 </a>
             </div>
-            <iframe class="pdf-frame" src="Rendu_IMRAD_Stats.pdf"></iframe>
+            <iframe class="pdf-frame" data-src="assets/docs/mooc-engagement-stats.pdf"></iframe>
             <a class="button is-light mt-3" href="https://github.com/AEI-Andraf/Portfolio/tree/803b979d0c0dd7402382b366268a2de7071ff661/Statistiques%20MOOC" target="_blank">
                 <span class="icon"><i class="fab fa-github"></i></span><span>View full project on GitHub</span>
             </a>
@@ -480,16 +563,16 @@
             <h3 class="title">Project 2: Drone Classification in Ukraine using Machine Learning (April 2024)</h3>
             <p>In the context of modern warfare, the use of military drones in Ukraine has become a major strategic issue. This project focuses on applying machine learning to classify different types of drones, whether for reconnaissance or as attack weapons. Real-time classification enhances the ability to respond to enemy strategies. The project began with an OSINT phase to gather coordinates of Russian bases and technical specifications of drones. A Random Forest model was trained to classify 1000 simulated drone trajectories. This work contributes to the broader transformation of warfare through AI and automation.</p>
             <div class="buttons mb-3">
-                <a class="button is-link" href="ProjetUA.pdf" target="_blank">
+                <a class="button is-link" href="assets/docs/ukraine-drone-classification.pdf" target="_blank">
                     <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
                     <span>Open full screen</span>
                 </a>
-                <a class="button" href="ProjetUA.pdf" download>
+                <a class="button" href="assets/docs/ukraine-drone-classification.pdf" download>
                     <span class="icon"><i class="fa-solid fa-download"></i></span>
                     <span>Download PDF</span>
                 </a>
             </div>
-            <iframe class="pdf-frame" src="ProjetUA.pdf"></iframe>
+            <iframe class="pdf-frame" data-src="assets/docs/ukraine-drone-classification.pdf"></iframe>
             <a class="button is-light mt-3" href="https://github.com/AEI-Andraf/Portfolio/tree/76d3b550f0b0ad7fe7d5ddfd3e9d65b82a0d0ba4/ClassificationDroneUA" target="_blank">
                 <span class="icon"><i class="fab fa-github"></i></span><span>View full project on GitHub</span>
             </a>
@@ -503,16 +586,16 @@
             <h3 class="title">Project 1: Syria Civil War Analysis (February 2024)</h3>
             <p>The Syrian civil war, which began in 2011, is one of the most complex conflicts of the 21st century. This project written in French explores the deep-rooted causes of the conflict, highlighting the repression of an authoritarian regime, internal power struggles, and foreign interventions. It includes a detailed analysis of key actors such as the Assad regime, rebel groups, and jihadist factions. The war’s impact on the region and international relations is central, especially regarding tensions with global powers. As Syria remains a strategic crossroads in the Middle East, this project aims to clarify the underlying dynamics that continue to destabilize the region.</p>
             <div class="buttons mb-3">
-                <a class="button is-link" href="syrie_fiche.pdf" target="_blank">
+                <a class="button is-link" href="assets/docs/syria-civil-war-analysis.pdf" target="_blank">
                     <span class="icon"><i class="fa-solid fa-up-right-from-square"></i></span>
                     <span>Open full screen</span>
                 </a>
-                <a class="button" href="syrie_fiche.pdf" download>
+                <a class="button" href="assets/docs/syria-civil-war-analysis.pdf" download>
                     <span class="icon"><i class="fa-solid fa-download"></i></span>
                     <span>Download PDF</span>
                 </a>
             </div>
-            <iframe class="pdf-frame" src="syrie_fiche.pdf"></iframe>
+            <iframe class="pdf-frame" data-src="assets/docs/syria-civil-war-analysis.pdf"></iframe>
         </div>
         <button class="modal-close is-large" aria-label="close" onclick="closeProject('projet1')"></button>
     </div>
@@ -537,9 +620,9 @@
             </div>
 
             <div class="credits">
-                <p>This page was created using 
-                    <a href="https://bulma.io/" target="_blank">Bulma</a>,
-                    <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+                <p>This page was built with
+                    <a href="https://bulma.io/" target="_blank" rel="noopener">Bulma</a>,
+                    <a href="https://fontawesome.com/" target="_blank" rel="noopener">Font Awesome</a>
                     and custom HTML/CSS.
                 </p>
 
@@ -555,24 +638,5 @@
         </div>
     </footer>
 
-
-    <script>
-        function showProject(id) {
-            document.getElementById(id).classList.add('is-active');
-        }
-        function closeProject(id) {
-            document.getElementById(id).classList.remove('is-active');
-        }
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll("iframe.pdf-frame").forEach(frame => {
-                const src = frame.getAttribute("src");
-                if (!src.includes("#")) {
-                    frame.setAttribute("src", src + "#zoom=50");
-                } else if (!src.includes("zoom=")) {
-                    frame.setAttribute("src", src + "&zoom=50");
-                }
-            });
-        });
-    </script>
 </body>
 </html>

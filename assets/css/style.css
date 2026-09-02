@@ -1,0 +1,494 @@
+/* Styles globaux */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #121212;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 1.2em;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #005B9F;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+h2.title {
+    color: #ffffff !important;
+}
+
+h2{
+    margin-top: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px !important;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    color: #000000;
+}
+
+section h2 {
+    background-color: #333;
+    color: #428bc3;
+    padding: 15px;
+    margin: 0;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.547);
+    border: 3px solid #005B9F;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar de base */
+.navbar {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Navbar translucide en haut */
+.navbar.transparent {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Fixe en haut du viewport */
+.navbar.is-fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+}
+
+/* Marge pour que le contenu ne passe pas sous la barre */
+body {
+  padding-top: 3.25rem; /* ajuste si besoin */
+}
+
+/* Alignement du bloc de gauche */
+.navbar .navbar-start {
+  margin-left: 5%;
+}
+
+/* Liens de la navbar: texte sombre, style propre */
+.navbar .navbar-item,
+.navbar .navbar-link {
+  position: relative;
+  color: #0f172a;
+  font-weight: 500;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  transition: color .15s ease;
+}
+
+/* Ligne bleue sous le lien au survol */
+.navbar .navbar-item::after,
+.navbar .navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: .35rem;
+  width: 0;
+  height: 2px;
+  background: #2563eb; /* bleu */
+  transition: width .15s ease;
+}
+
+/* Survol: texte bleu + soulignement animé */
+.navbar .navbar-item:hover,
+.navbar .navbar-link:hover {
+  background: transparent !important;
+  color: #2563eb;
+}
+
+.navbar .navbar-item:hover::after,
+.navbar .navbar-link:hover::after {
+  width: 100%;
+}
+
+
+.image-custom-align img {
+    transition: transform 0.3s ease;
+    border: 3px solid #000000;
+    border-radius: 8px;
+}
+
+.image-custom-align:hover img {
+    transform: scale(1.05);
+}
+
+
+.columns.is-multiline.is-mobile img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.columns.is-multiline.is-mobile img:hover {
+    transform: scale(1.1);
+}
+
+/* ==== Footer Contact Section ==== */
+
+.footer-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: .8rem;
+  color: white;
+  letter-spacing: .02em;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;  /* espace agrandi */
+}
+
+.footer-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3.5rem;
+  height: 3.5rem;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.35);
+
+  color: white;
+  font-size: 1.3rem;
+  transition: all .18s ease;
+}
+
+.footer-btn:hover {
+  color: #b3d9ff;
+  border-color: #b3d9ff;
+  transform: translateY(-2px);
+}
+
+/* ==== Footer global ==== */
+
+footer.footer {
+    background-color: #005B9F;
+    color: white;
+    font-size: 0.8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+footer.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer.footer a:hover {
+    color: #b3d9ff;
+}
+
+footer.footer img {
+    height: 20px;
+    margin-top: .25rem;
+}
+
+/* Crédits plus compacts */
+footer.footer .credits > p {
+    margin: 0.3rem 0 !important;
+    line-height: 1 !important;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 40px;
+    border: 4px solid #005B9F;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    max-height: 95vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.box.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.image-custom-align img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+.pdf-frame {
+  width: 100%;
+  height: 80vh;
+  border: none;
+}
+
+/* ===== Experience (radicalement restructuré, sobre Bulma-friendly) ===== */
+#resume .xp-group { margin-top: .25rem; }
+
+/* Petits intertitres */
+#resume .xp-section {
+  margin: .75rem 0 .25rem;
+  font-size: .85rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #334155; /* slate-700 */
+}
+
+/* Ligne compacte, grille 3 colonnes: pastille | contenu | date */
+#resume .xp-entry {
+  display: grid;
+  grid-template-columns: .675rem 1fr auto;
+  align-items: start;
+  gap: .5rem 1rem;
+  padding: .44rem .25rem;
+  border-top: 2px solid rgba(2,6,23,.06);
+  background-color: rgba(0, 91, 159, 0.1);
+  border-radius: 6px;
+}
+#resume .xp-entry:first-of-type { border-top: 0; }
+
+/* Pastille ultra discrète (différente pro/asso), sans badge */
+#resume .xp-dot {
+  width: .38rem; height: .38rem; margin-top: .35rem;
+  border-radius: 999px;
+  background: rgba(2,6,23,.22);
+}
+#resume .xp-entry.pro .xp-dot   { background: rgba(13,148,136,.28); } /* teal très léger */
+#resume .xp-entry.assoc .xp-dot { background: rgba(37,99,235,.24); }  /* bleu très léger */
+
+/* Contenu: rôle + org sur une ligne; note seulement pour stages */
+#resume .xp-body { min-width: 0; }
+#resume .xp-head { display: inline; }
+#resume .xp-role { color: #0f172a; }     /* texte principal, pas de gras */
+#resume .xp-at   { color: #1f2937; }     /* org, un ton en dessous sans gris fade */
+
+#resume .xp-date {
+  color: #1e232a;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  padding-left: .5rem;
+  border: 2px solid rgba(30,35,42,.12);
+  border-radius: 4px;
+  font-style: italic;
+  font-size: .85rem;
+
+}
+
+#resume .columns.is-multiline.is-mobile img {
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+
+/* Hover minimal (desktop), juste pour guider l'œil */
+@media (hover:hover) {
+  #resume .xp-entry:hover { background: rgba(2,6,23,.018); }
+}
+
+/* Mobile: date passe en dessous */
+@media (max-width: 768px) {
+  #resume .xp-entry { grid-template-columns: .675rem 1fr; }
+  #resume .xp-date { grid-column: 2; margin-top: .08rem; padding-left: 0; }
+}
+
+/* VS Code-like styling for inline libs (override Bulma's red code color) */
+#resume code.libs-inline {
+  background: transparent;
+  padding: 0;
+  color: inherit; /* <-- neutralise le rouge de Bulma pour que les virgules restent normales */
+  font-family: "Cascadia Code", "Consolas", ui-monospace, SFMono-Regular, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95em;
+}
+
+#resume code.libs-inline .lib { 
+  color: #4EC9B0; /* VS Code Dark+ teal */
+  font-weight: 500; /* optionnel, donne un rendu proche de VS Code */
+}
+#resume .xp-entry.edu .xp-dot {
+  background: rgba(107,114,128,.28); /* gris neutre élégant */
+}
+
+#degree .degree-col {
+  background-color: rgba(0, 91, 159, 0.08);
+  border: 1px solid rgba(0, 91, 159, 0.18);
+  border-radius: 6px;
+  text-align: left; 
+}
+
+#degree .school-title {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  text-align: center; 
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#degree .school-logo {
+  width: 60px;
+  height: auto;
+  justify-self: start; 
+}
+
+/* liste dans les rectangles, avec les mêmes "ronds" que xp-dot */
+#degree .school-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 18rem;
+  margin-inline: auto;
+  text-align: left;
+}
+
+#degree .school-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+#degree .school-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: .38rem;
+  height: .38rem;
+  border-radius: 999px;
+  background: rgba(2,6,23,.22);  /* même couleur que .xp-dot */
+}
+#degree .degree-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0f172a;
+  margin-bottom: 1.8rem;
+  letter-spacing: .4px;
+}
+
+
+/* ===== Captures d'ecran dans les modales de projet ===== */
+.project-shot {
+  margin: 1.5rem 0 0;
+}
+
+.project-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid rgba(0, 91, 159, .35);
+  border-radius: 6px;
+  background: #0e1117;
+}
+
+.project-shot figcaption {
+  margin-top: .5rem;
+  font-size: .85rem;
+  line-height: 1.4;
+  color: #334155;
+  text-align: center;
+}
+
+/* ===== Liens des entrees Education / Experience =====
+   Discrets: on garde la couleur du texte, un simple souligne leger,
+   et le bleu du site seulement au survol. */
+#resume .xp-entry a,
+#degree .degree-title a,
+#degree .school-title a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(2, 6, 23, .22);
+  transition: color .15s ease, border-color .15s ease;
+}
+
+/* Le lien est un item de la grille .school-title : sans cela il occupe
+   toute la colonne 1fr et le souligne depasse largement le texte. */
+#degree .school-title a {
+  justify-self: center;
+}
+
+#resume .xp-entry a:hover,
+#degree .degree-title a:hover,
+#degree .school-title a:hover {
+  color: #005B9F;
+  border-bottom-color: #005B9F;
+}
+
+/* ===== Bloc CV, colonne de droite sous les logos =====
+   Aligne sur la grille de logos, qui porte un margin-right de 2rem. */
+.cv-block {
+  margin: 2.5rem 0 0;
+  padding: .8rem 1rem;
+  background-color: rgba(0, 91, 159, .08);
+  border: 1px solid rgba(0, 91, 159, .18);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.cv-block a {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: #0f172a;
+  font-size: .95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .15s ease;
+}
+
+.cv-block a:hover {
+  color: #005B9F;
+}
+
+/* ===== Vignette large (capture de tableau de bord) =====
+   Proportions respectees, cadrage sur la partie gauche de l'image. */
+.project-card .image.is-wide-shot img {
+  object-fit: cover;
+  object-position: left center;
+}
